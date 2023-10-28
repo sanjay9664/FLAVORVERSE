@@ -1,13 +1,18 @@
+// const key = "0602f8a0e59884d4d56bdca7e8137eff"
+// const id = "87e0b39e"
 
 export async function fetchRecipes (filter){
     const {query, limit} = filter;
 
-    const url = `https://api.edamam.com/search?q=${query}&app_id=${process.env.REACT_APP_EDAMAM_APP_ID}&app_key=${process.env.REACT_APP_EDAMAM_API_KEY}&from=0&to=${limit}&`;
-
-
+    const url = `https://api.edamam.com/search?q=${query}&app_id=${'87e0b39e'}&app_key=${"0602f8a0e59884d4d56bdca7e8137eff"}&from=0&to=${limit}&`;
+  
+ 
+    // https://api.edamam.com/search?q=chicken&app_id=87e0b39e&app_key=0602f8a0e59884d4d56bdca7e8137eff
+    //   sanjay gupta
     const response = await fetch(url)
 
     const data = await response.json();
+    console.log(data)
 
     return data?.hits;
 }
