@@ -6,6 +6,7 @@ export async function fetchRecipes (filter){
 
     const url = `https://api.edamam.com/search?q=${query}&app_id=${'87e0b39e'}&app_key=${"0602f8a0e59884d4d56bdca7e8137eff"}&from=0&to=${limit}&`;
   
+    // sanjay gupta data 
  
     // https://api.edamam.com/search?q=chicken&app_id=87e0b39e&app_key=0602f8a0e59884d4d56bdca7e8137eff
     //   sanjay gupta
